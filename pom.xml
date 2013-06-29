@@ -24,11 +24,11 @@
     <artifactId>aerogear-parent</artifactId>
     <packaging>pom</packaging>
     <version>0.1.0-SNAPSHOT</version>
-	<name>JBoss AeroGear</name>
-	<description>
+    <name>JBoss AeroGear</name>
+    <description>
         Open Source Libraries for Mobile Connectivity
     </description>
-	<url>http://aerogear.org</url>
+    <url>http://aerogear.org</url>
 
     <parent>
         <groupId>org.jboss</groupId>
