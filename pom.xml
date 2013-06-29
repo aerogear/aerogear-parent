@@ -39,6 +39,16 @@
         </license>
     </licenses>
 
+    <mailingLists>
+        <mailingList>
+            <name>AeroGear List</name>
+            <subscribe>aerogear-dev-subscribe@lists.jboss.org</subscribe>
+            <unsubscribe>aerogear-dev-unsubscribe@lists.jboss.org</unsubscribe>
+            <post>aerogear-dev@lists.jboss.org</post>
+            <archive>http://lists.jboss.org/pipermail/aerogear-dev/</archive>
+        </mailingList>
+    </mailingLists>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
