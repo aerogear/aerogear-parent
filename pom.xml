@@ -44,6 +44,11 @@
         </license>
     </licenses>
 
+    <issueManagement>
+        <system>jira</system>
+        <url>https://issues.jboss.org/browse/AEROGEAR</url>
+    </issueManagement>
+
     <mailingLists>
         <mailingList>
             <name>AeroGear List</name>
