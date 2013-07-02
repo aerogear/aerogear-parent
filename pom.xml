@@ -45,7 +45,7 @@
     </licenses>
 
     <issueManagement>
-        <system>jira</system>
+        <system>JIRA</system>
         <url>https://issues.jboss.org/browse/AEROGEAR</url>
     </issueManagement>
 
