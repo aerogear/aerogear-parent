@@ -64,6 +64,14 @@
         </mailingList>
     </mailingLists>
 
+    <developers>
+        <developer>
+            <id>aerogear</id>
+            <name>AeroGear Team</name>
+            <email>aerogear-dev@lists.jboss.org</email>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aerogear-misc.version>0.1.1</aerogear-misc.version>
