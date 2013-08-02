@@ -77,6 +77,14 @@
         <aerogear-misc.version>0.1.2-SNAPSHOT</aerogear-misc.version>
     </properties>
 
+
+    <repositories>
+        <repository>
+            <id>jboss-public-snapshot-repository-group</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
