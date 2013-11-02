@@ -1,5 +1,8 @@
 language: java
 
+before_install:
+  - mvn install -N --quiet -U
+
 jdk:
   - oraclejdk7
   - openjdk6
