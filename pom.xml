@@ -74,7 +74,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aerogear-misc.version>0.1.1</aerogear-misc.version>
+        <aerogear-misc.version>0.1.2-SNAPSHOT</aerogear-misc.version>
     </properties>
 
     <build>
