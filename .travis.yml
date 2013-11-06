@@ -1,5 +1,13 @@
 language: java
 
+before_install:
+  - git clone git://github.com/aerogear/aerogear-misc.git
+  - cd $PWD/aerogear-misc
+  - mvn install -N --quiet
+  - cd ..
+
+  - mvn install -N --quiet
+
 jdk:
   - oraclejdk7
   - openjdk6
