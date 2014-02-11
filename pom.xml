@@ -95,7 +95,7 @@
             <plugin>
                 <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
                 <artifactId>maven-java-formatter-plugin</artifactId>
-                <version>0.3.1</version>
+                <version>0.4</version>
                 <configuration>
                     <configFile>/eclipse-formatting.xml</configFile>
                     <lineEnding>LF</lineEnding>
