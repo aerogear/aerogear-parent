@@ -31,7 +31,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>10</version>
+        <version>11</version>
     </parent>
 
     <scm>
@@ -75,6 +75,14 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aerogear-misc.version>0.1.2-SNAPSHOT</aerogear-misc.version>
+        <java-formatter.plugin.version>0.4</java-formatter.plugin.version>
+        <license.plugin.version>1.9.0</license.plugin.version>
+        <compiler.plugin.version>2.3.2</compiler.plugin.version>
+        <release.plugin.version>2.4</release.plugin.version>
+
+        <!-- AeroGear is compiled against and using JDK6 -->
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
 
     <repositories>
@@ -90,12 +98,50 @@
         </repository>
     </repositories>
 
+
+    <modules>
+        <module>aerogear-bom</module>
+        <module>aerogear-android-bom</module>
+        <module>aerogear-test-bom</module>
+    </modules>
+
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
+                    <artifactId>maven-java-formatter-plugin</artifactId>
+                    <version>${java-formatter.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.mycila.maven-license-plugin</groupId>
+                    <artifactId>maven-license-plugin</artifactId>
+                    <version>${license.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <!-- Overrides version from jboss-parent -->
+                    <!-- Since 3.0, the default compiler is javax.tools.JavaCompiler (if you
+                         are using java 1.6) and is used to compile Java sources. If you want
+                         to force the plugin using javac, you must configure the plugin option
+                         <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                         or -Dmaven.compiler.forceJavacCompilerUse=true -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${compiler.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <!-- Overrides version from jboss-parent, which is 2.3.2-->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>${release.plugin.version}</version>
+                </plugin>
+             </plugins>
+        </pluginManagement>
+
         <plugins>
             <plugin>
                 <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
                 <artifactId>maven-java-formatter-plugin</artifactId>
-                <version>0.4</version>
                 <configuration>
                     <configFile>/eclipse-formatting.xml</configFile>
                     <lineEnding>LF</lineEnding>
@@ -111,7 +157,6 @@
             <plugin>
                 <groupId>com.mycila.maven-license-plugin</groupId>
                 <artifactId>maven-license-plugin</artifactId>
-                <version>1.9.0</version>
                 <configuration>
                     <header>/al_v2_license_header.txt</header>
                     <includes>
@@ -131,7 +176,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.9.1</version>
                 <configuration>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     <configLocation>/checkstyle-rules.xml</configLocation>
@@ -157,21 +201,7 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.1.2</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -183,28 +213,7 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <id>enforce-maven</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <version>3.0.0</version>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.4</version>
                 <configuration>
                     <pushChanges>false</pushChanges>
                 </configuration>
@@ -226,7 +235,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.4</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
