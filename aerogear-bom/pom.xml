@@ -56,6 +56,9 @@
                 - Do not declare <scope> (exception: import) or <optional>: a child module will declare scope/optional itself.
                 - Always extract the version as a property.
                 - A element's inner order is <groupId>, <artifactId>, [<type>,] [<classifier>,] <version> (following Aether proper)
+                EXCEPTIONS:
+                - If there is the need to force a particular version of a dependency out from a set of transitive dependencies, the
+                  alphabetical ordering policy may be overridden.
             -->
 
             <dependency>

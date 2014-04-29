@@ -31,7 +31,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>10</version>
+        <version>11</version>
     </parent>
 
     <scm>
@@ -79,6 +79,10 @@
         <license.plugin.version>1.9.0</license.plugin.version>
         <compiler.plugin.version>2.3.2</compiler.plugin.version>
         <release.plugin.version>2.4</release.plugin.version>
+
+        <!-- AeroGear is compiled against and using JDK6 -->
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
 
     <repositories>
