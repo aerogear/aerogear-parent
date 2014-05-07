@@ -74,7 +74,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aerogear-misc.version>0.1.2-SNAPSHOT</aerogear-misc.version>
+        <aerogear-misc.version>0.1.2</aerogear-misc.version>
         <java-formatter.plugin.version>0.4</java-formatter.plugin.version>
         <license.plugin.version>1.9.0</license.plugin.version>
         <compiler.plugin.version>2.3.2</compiler.plugin.version>
