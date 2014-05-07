@@ -38,6 +38,10 @@
         <mockito.version>1.9.0</mockito.version>
         <openejb.version>4.6.0</openejb.version>
         <powermock.version>1.5.1</powermock.version>
+        <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
+        <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
+
+
     </properties>
 
     <dependencyManagement>
@@ -119,6 +123,20 @@
 
          </dependencies>
     </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>jboss-releases-repository</id>
+            <name>JBoss Releases Repository</name>
+            <url>${jboss.releases.repo.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>jboss-snapshots-repository</id>
+            <name>JBoss Snapshots Repository</name>
+            <url>${jboss.snapshots.repo.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
 </project>
 

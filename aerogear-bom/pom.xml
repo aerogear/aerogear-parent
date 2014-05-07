@@ -45,6 +45,10 @@
 	<scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
         <slf4j.version>1.7.5</slf4j.version>
         <vertx.version>2.0.1-final</vertx.version>
+        <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
+        <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
+
+
     </properties>
 
     <dependencyManagement>
@@ -219,6 +223,21 @@
 
          </dependencies>
     </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>jboss-releases-repository</id>
+            <name>JBoss Releases Repository</name>
+            <url>${jboss.releases.repo.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>jboss-snapshots-repository</id>
+            <name>JBoss Snapshots Repository</name>
+            <url>${jboss.snapshots.repo.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
 
 </project>
 
