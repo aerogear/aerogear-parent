@@ -42,18 +42,26 @@
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
         <resteasy.version>2.3.2.Final</resteasy.version>
-	<scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
+	      <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
         <slf4j.version>1.7.5</slf4j.version>
         <vertx.version>2.0.1-final</vertx.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
-
-
     </properties>
+
+    <developers>
+        <developer>
+            <id>aerogear</id>
+            <name>AeroGear Team</name>
+            <email>aerogear-dev@lists.jboss.org</email>
+        </developer>
+    </developers>
+
+
 
     <dependencyManagement>
         <dependencies>
-        
+
             <!--
                 CONVENTIONS:
                 - Dependencies must be SORTED ALPHABETICALLY on groupId (other forms of sorting were found to be unclear and ambiguous).
@@ -112,7 +120,7 @@
                 <artifactId>netty-codec</artifactId>
                 <version>${netty.version}</version>
             </dependency>
-  
+
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-http</artifactId>
@@ -124,7 +132,7 @@
                 <artifactId>netty-codec-sockjs</artifactId>
                 <version>${netty.version}</version>
             </dependency>
-  
+
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-handler</artifactId>
@@ -148,7 +156,7 @@
                 <artifactId>base64</artifactId>
                 <version>${iharder.version}</version>
             </dependency>
-        
+
             <dependency>
                 <groupId>org.ektorp</groupId>
                 <artifactId>org.ektorp</artifactId>
