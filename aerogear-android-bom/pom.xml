@@ -37,7 +37,6 @@
         <google.playservice.version>[10,)</google.playservice.version>
         <guava.version>13.0.1</guava.version>
         <gson.version>2.2.2</gson.version>
-        <picasso.version>2.1.1</picasso.version>
         <roboeletric.version>2.2</roboeletric.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
@@ -150,12 +149,6 @@
                 <groupId>org.robolectric</groupId>
                 <artifactId>robolectric</artifactId>
                 <version>${roboeletric.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.squareup.picasso</groupId>
-                <artifactId>picasso</artifactId>
-                <version>${picasso.version}</version>
             </dependency>
 
          </dependencies>
