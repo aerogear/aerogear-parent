@@ -67,8 +67,6 @@
         </license>
     </licenses>
 
-
-
     <dependencyManagement>
         <dependencies>
 
@@ -176,7 +174,4 @@
         </snapshotRepository>
     </distributionManagement>
 
-
-
 </project>
-
