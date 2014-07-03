@@ -30,7 +30,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <apns.version>0.2.3</apns.version>
+        <apns.version>1.0.0.Beta2</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
         <ektorp.version>1.4.1</ektorp.version>
         <hibernate.version>4.2.3.Final</hibernate.version>
