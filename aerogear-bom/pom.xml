@@ -34,6 +34,7 @@
         <bouncycastle.version>140</bouncycastle.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <ektorp.version>1.4.1</ektorp.version>
+        <freemarker.version>2.3.19</freemarker.version>
         <hibernate.version>4.2.12.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
@@ -44,6 +45,7 @@
         <keycloak.version>1.0-beta-3</keycloak.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
+        <org.bouncycastle.version>1.46</org.bouncycastle.version>
         <resteasy.version>2.3.7.Final</resteasy.version>
         <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
         <slf4j.version>1.7.5</slf4j.version>
@@ -183,6 +185,12 @@
             </dependency>
 
             <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk16</artifactId>
+                <version>${org.bouncycastle.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.codehaus.jackson</groupId>
                 <artifactId>jackson-core-asl</artifactId>
                 <version>${codehaus.jackson.version}</version>
@@ -202,6 +210,12 @@
                 <groupId>org.ektorp</groupId>
                 <artifactId>org.ektorp</artifactId>
                 <version>${ektorp.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
             </dependency>
 
             <dependency>
