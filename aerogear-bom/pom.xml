@@ -42,7 +42,7 @@
         <jedis.version>2.0.0</jedis.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
-        <resteasy.version>2.3.2.Final</resteasy.version>
+        <resteasy.version>2.3.7.Final</resteasy.version>
         <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
         <slf4j.version>1.7.5</slf4j.version>
         <vertx.version>2.0.1-final</vertx.version>
@@ -196,13 +196,11 @@
                 <artifactId>jboss-as-controller</artifactId>
                 <version>${jboss.as.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.jboss.as</groupId>
                 <artifactId>jboss-as-naming</artifactId>
                 <version>${jboss.as.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.jboss.as</groupId>
                 <artifactId>jboss-as-server</artifactId>
@@ -217,10 +215,24 @@
 
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
+                <artifactId>async-http-servlet-3.0</artifactId>
+                <version>${resteasy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>jaxrs-api</artifactId>
+                <version>${resteasy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jackson-provider</artifactId>
                 <version>${resteasy.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jaxrs</artifactId>
+                <version>${resteasy.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-multipart-provider</artifactId>
