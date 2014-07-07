@@ -32,6 +32,8 @@
 
         <apns.version>1.0.0.Beta2</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
+        <commons-codec.version>1.6</commons-codec.version>
+        <commons-logging.version>1.1.1</commons-logging.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <ektorp.version>1.4.1</ektorp.version>
         <freemarker.version>2.3.19</freemarker.version>
@@ -45,6 +47,7 @@
         <keycloak.version>1.0-beta-3</keycloak.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
+        <org.apache.httpcomponents.version>4.2.1</org.apache.httpcomponents.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
         <resteasy.version>2.3.7.Final</resteasy.version>
         <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
@@ -275,6 +278,27 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-multipart-provider</artifactId>
                 <version>${resteasy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${org.apache.httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${org.apache.httpcomponents.version}</version>
             </dependency>
 
             <dependency>
