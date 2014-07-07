@@ -33,9 +33,11 @@
         <apns.version>1.0.0.Beta2</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
         <commons-codec.version>1.6</commons-codec.version>
+        <commons-httpclient.version>3.1</commons-httpclient.version>
         <commons-logging.version>1.1.1</commons-logging.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <ektorp.version>1.4.1</ektorp.version>
+        <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.19</freemarker.version>
         <hibernate.version>4.2.12.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
@@ -134,6 +136,17 @@
                 <groupId>com.madgag</groupId>
                 <artifactId>scprov-jdk15on</artifactId>
                 <version>${scprov-jdk15on.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>${commons-httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${findbugs.version}</version>
             </dependency>
 
             <dependency>
