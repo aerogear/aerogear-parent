@@ -33,8 +33,8 @@
         <apns.version>0.2.3</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
         <ektorp.version>1.4.1</ektorp.version>
-        <hibernate.version>4.2.3.Final</hibernate.version>
-        <hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
+        <hibernate.version>4.2.12.Final</hibernate.version>
+        <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
         <jackson.version>2.3.0</jackson.version>
         <jboss.as.version>7.1.1.Final</jboss.as.version>
@@ -43,7 +43,7 @@
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
         <resteasy.version>2.3.2.Final</resteasy.version>
-	      <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
+        <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
         <slf4j.version>1.7.5</slf4j.version>
         <vertx.version>2.0.1-final</vertx.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
