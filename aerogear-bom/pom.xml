@@ -32,6 +32,7 @@
 
         <apns.version>0.2.3</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
+        <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <ektorp.version>1.4.1</ektorp.version>
         <hibernate.version>4.2.12.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
@@ -101,13 +102,11 @@
                 <artifactId>jackson-core</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
@@ -137,19 +136,16 @@
                 <artifactId>netty-codec</artifactId>
                 <version>${netty.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-http</artifactId>
                 <version>${netty.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-sockjs</artifactId>
                 <version>${netty.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-handler</artifactId>
@@ -175,6 +171,22 @@
             </dependency>
 
             <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-core-asl</artifactId>
+                <version>${codehaus.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>${codehaus.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-xc</artifactId>
+                <version>${codehaus.jackson.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.ektorp</groupId>
                 <artifactId>org.ektorp</artifactId>
                 <version>${ektorp.version}</version>
@@ -185,7 +197,6 @@
                 <artifactId>hibernate-entitymanager</artifactId>
                 <version>${hibernate.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
