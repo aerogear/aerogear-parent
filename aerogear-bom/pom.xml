@@ -314,6 +314,19 @@
                 <version>${org.apache.httpcomponents.version}</version>
             </dependency>
 
+            <!-- Keycloak section borrowed from project integrations on Keycloak -->
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-dependencies-server-min</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-connections-jpa</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-account-api</artifactId>
