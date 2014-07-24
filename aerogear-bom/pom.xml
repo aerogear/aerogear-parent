@@ -392,6 +392,12 @@
               <version>${keycloak.version}</version>
             </dependency>
 
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-jboss-adapter-core</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
             <!-- Required adatpers -->
             <dependency>
               <groupId>org.keycloak</groupId>
