@@ -39,7 +39,7 @@
         <ektorp.version>1.4.1</ektorp.version>
         <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.19</freemarker.version>
-        <hibernate.version>4.2.12.Final</hibernate.version>
+        <hibernate.version>4.2.15.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
         <jackson.version>2.3.0</jackson.version>
