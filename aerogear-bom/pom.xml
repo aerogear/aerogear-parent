@@ -47,6 +47,7 @@
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <jedis.version>2.0.0</jedis.version>
         <keycloak.version>1.0-beta-4</keycloak.version>
+        <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.version>4.2.1</org.apache.httpcomponents.version>
@@ -333,6 +334,7 @@
             <dependency>
               <groupId>org.jboss.spec.javax.servlet</groupId>
               <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+              <version>${servlet.api.30.version}</version>
               <scope>provided</scope>
             </dependency>
 
