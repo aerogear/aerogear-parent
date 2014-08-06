@@ -38,7 +38,7 @@
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <ektorp.version>1.4.1</ektorp.version>
         <findbugs.version>2.0.3</findbugs.version>
-        <freemarker.version>2.3.19</freemarker.version>
+        <freemarker.version>2.3.20</freemarker.version>
         <hibernate.version>4.2.15.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
@@ -46,7 +46,7 @@
         <jboss.as.version>7.1.1.Final</jboss.as.version>
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <jedis.version>2.0.0</jedis.version>
-        <keycloak.version>1.0-beta-3</keycloak.version>
+        <keycloak.version>1.0-beta-4</keycloak.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.version>4.2.1</org.apache.httpcomponents.version>
@@ -314,145 +314,100 @@
                 <version>${org.apache.httpcomponents.version}</version>
             </dependency>
 
+            <!-- Keycloak section borrowed from project integrations on Keycloak -->
+
             <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-account-api</artifactId>
-                <version>${keycloak.version}</version>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-dependencies-server-min</artifactId>
+              <version>${keycloak.version}</version>
+              <type>pom</type>
+            </dependency>
+
+            <dependency>
+              <groupId>org.jboss.resteasy</groupId>
+              <artifactId>resteasy-jaxrs</artifactId>
+              <version>${resteasy.version}</version>
+              <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+              <groupId>org.jboss.spec.javax.servlet</groupId>
+              <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+              <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-connections-jpa</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-model-jpa</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-model-sessions-mem</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-model-sessions-jpa</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-audit-api</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-audit-jpa</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-audit-jboss-logging</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <!-- Required by ups-jaxrs module -->
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-core</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <!-- Required by ups-server module -->
+           <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-adapter-core</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-jboss-adapter-core</artifactId>
+              <version>${keycloak.version}</version>
+            </dependency>
+
+            <!-- Required adatpers -->
+            <dependency>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-as7-adapter</artifactId>
+              <version>${keycloak.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-account-freemarker</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-adapter-core</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-as7-adapter</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-audit-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-audit-jpa</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-audit-jboss-logging</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-authentication-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-authentication-model</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-core</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-core-jaxrs</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-export-import-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-export-import-impl</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-forms-common-freemarker</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-forms-common-themes</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-jboss-adapter-core</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-js-adapter</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-login-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-login-freemarker</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-email-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-email-freemarker</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-model-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-model-jpa</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-invalidation-cache-model</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-services</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-social-core</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-timer-api</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-timer-basic</artifactId>
-                <version>${keycloak.version}</version>
+              <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-wildfly-adapter</artifactId>
+              <version>${keycloak.version}</version>
             </dependency>
 
             <dependency>
@@ -460,6 +415,7 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
@@ -491,4 +447,3 @@
 
 
 </project>
-
