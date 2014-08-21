@@ -46,7 +46,7 @@
         <jboss.as.version>7.1.1.Final</jboss.as.version>
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <jedis.version>2.0.0</jedis.version>
-        <keycloak.version>1.0-rc-1-SNAPSHOT</keycloak.version>
+        <keycloak.version>1.0-rc-1</keycloak.version>
         <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
