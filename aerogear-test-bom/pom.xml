@@ -37,7 +37,7 @@
 
         <junit.version>4.11</junit.version>
 
-        <org.apache.openejb.version>4.6.0</org.apache.openejb.version>
+        <org.apache.openejb.version>4.7.0</org.apache.openejb.version>
         <org.arquillian.spacelift>1.0.0.Alpha2</org.arquillian.spacelift>
         <org.assertj.version>1.5.0</org.assertj.version>
         <org.easytesting.version>1.4</org.easytesting.version>
