@@ -102,6 +102,7 @@
     <modules>
         <module>aerogear-bom</module>
         <module>aerogear-android-bom</module>
+        <module>aerogear-security-bom</module>
         <module>aerogear-test-bom</module>
     </modules>
 
