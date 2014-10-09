@@ -31,8 +31,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <android.version>4.4.2_r4</android.version>
-        <android.support.version>[19.1,)</android.support.version>
-
+        <android.support.version>[19,)</android.support.version>
         <gcm-server.version>1.0.2</gcm-server.version>
         <google.playservice.version>[10,)</google.playservice.version>
         <guava.version>13.0.1</guava.version>
@@ -80,7 +79,7 @@
                 - If there is the need to force a particular version of a dependency out from a set of transitive dependencies, the
                   alphabetical ordering policy may be overridden.
             -->
-            
+
             <dependency>
                 <groupId>android</groupId>
                 <artifactId>android</artifactId>
