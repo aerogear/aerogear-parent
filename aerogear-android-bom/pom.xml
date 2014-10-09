@@ -30,7 +30,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <android.version>4.1.1.4</android.version>
+        <android.version>4.4.2_r4</android.version>
         <android.support.version>[19.1,)</android.support.version>
 
         <gcm-server.version>1.0.2</gcm-server.version>
@@ -80,6 +80,12 @@
                 - If there is the need to force a particular version of a dependency out from a set of transitive dependencies, the
                   alphabetical ordering policy may be overridden.
             -->
+            
+            <dependency>
+                <groupId>android</groupId>
+                <artifactId>android</artifactId>
+                <version>${android.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>android.support</groupId>
@@ -111,12 +117,6 @@
                 <groupId>com.ganyo</groupId>
                 <artifactId>gcm-server</artifactId>
                 <version>${gcm-server.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android</artifactId>
-                <version>${android.version}</version>
             </dependency>
 
             <dependency>
