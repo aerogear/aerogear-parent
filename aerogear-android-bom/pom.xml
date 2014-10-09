@@ -32,11 +32,9 @@
 
         <android.version>4.4.2_r4</android.version>
         <android.support.version>[19,)</android.support.version>
-        <gcm-server.version>1.0.2</gcm-server.version>
         <google.playservice.version>[10,)</google.playservice.version>
         <guava.version>13.0.1</guava.version>
         <gson.version>2.2.2</gson.version>
-        <json-simple.version>1.1</json-simple.version>
         <roboeletric.version>2.2</roboeletric.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
@@ -104,24 +102,6 @@
                 <artifactId>compatibility-v7-appcompat</artifactId>
                 <version>${android.support.version}</version>
                 <type>apklib</type>
-            </dependency>
-
-            <dependency>
-                <groupId>com.googlecode.json-simple</groupId>
-                <artifactId>json-simple</artifactId>
-                <version>${json-simple.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.ganyo</groupId>
-                <artifactId>gcm-server</artifactId>
-                <version>${gcm-server.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>annotations</artifactId>
-                <version>${android.version}</version>
             </dependency>
 
             <dependency>
