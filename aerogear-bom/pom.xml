@@ -39,6 +39,7 @@
         <ektorp.version>1.4.1</ektorp.version>
         <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.20</freemarker.version>
+        <gcm-server.version>1.0.2</gcm-server.version>
         <hibernate.version>4.2.15.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
@@ -46,6 +47,7 @@
         <jboss.as.version>7.1.1.Final</jboss.as.version>
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <jedis.version>2.0.0</jedis.version>
+        <json-simple.version>1.1</json-simple.version>
         <keycloak.version>1.0.1.Final</keycloak.version>
         <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
         <netty.version>5.0.0.Alpha1</netty.version>
@@ -83,8 +85,6 @@
         </license>
     </licenses>
 
-
-
     <dependencyManagement>
         <dependencies>
 
@@ -119,6 +119,18 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ganyo</groupId>
+                <artifactId>gcm-server</artifactId>
+                <version>${gcm-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.googlecode.json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>${json-simple.version}</version>
             </dependency>
 
             <dependency>
