@@ -30,7 +30,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <android.version>4.4.2_r4</android.version>
+        <android.version>[4.4.2_r4,)</android.version>
         <android.support.version>[19,)</android.support.version>
         <google.playservice.version>[10,)</google.playservice.version>
         <guava.version>13.0.1</guava.version>
