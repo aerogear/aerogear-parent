@@ -15,7 +15,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.aerogear</groupId>
@@ -30,12 +31,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <android.version>4.4.2_r4</android.version>
-        <android.support.version>[19,)</android.support.version>
-        <google.playservice.version>[10,)</google.playservice.version>
+        <android.version>[5.0_r1,)</android.version>
+        <android.support.version>[21.0.0,)</android.support.version>
+        <google.playservice.version>6.1.71</google.playservice.version>
         <guava.version>13.0.1</guava.version>
         <gson.version>2.2.2</gson.version>
-        <roboeletric.version>2.2</roboeletric.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
 
@@ -53,8 +53,8 @@
         <connection>scm:git:git://git@github.com:aerogear/aerogear-parent.git</connection>
         <developerConnection>scm:git:ssh://github.com:aerogear/aerogear-parent.git</developerConnection>
         <url>git://github.com:aerogear/aerogear-parent.git</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <licenses>
         <license>
@@ -106,16 +106,15 @@
 
             <dependency>
                 <groupId>com.google.android.gms</groupId>
-                <artifactId>google-play-services</artifactId>
+                <artifactId>play-services</artifactId>
                 <version>${google.playservice.version}</version>
-                <type>apklib</type>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.android.gms</groupId>
-                <artifactId>google-play-services</artifactId>
-                <version>${google.playservice.version}</version>
-                <type>jar</type>
+                <type>aar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.android.support</groupId>
+                        <artifactId>support-v4</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -130,14 +129,7 @@
                 <version>${guava.version}</version>
                 <type>jar</type>
             </dependency>
-
-            <dependency>
-                <groupId>org.robolectric</groupId>
-                <artifactId>robolectric</artifactId>
-                <version>${roboeletric.version}</version>
-            </dependency>
-
-         </dependencies>
+        </dependencies>
     </dependencyManagement>
 
     <distributionManagement>
