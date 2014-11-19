@@ -34,7 +34,6 @@
         <android.version>[5.0_r1,)</android.version>
         <android.support.version>[21.0.0,)</android.support.version>
         <google.playservice.version>6.1.71</google.playservice.version>
-        <guava.version>13.0.1</guava.version>
         <gson.version>2.2.2</gson.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
@@ -123,12 +122,6 @@
                 <version>${gson.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
-                <type>jar</type>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
