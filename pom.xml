@@ -21,7 +21,7 @@
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.2.10-SNAPSHOT</version>
+    <version>0.2.11-SNAPSHOT</version>
     <name>JBoss AeroGear</name>
     <description>
         Open Source Libraries for Mobile Connectivity
