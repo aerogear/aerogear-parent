@@ -344,6 +344,12 @@
 
             <dependency>
               <groupId>org.keycloak</groupId>
+              <artifactId>keycloak-connections-jpa-liquibase</artifactId>
+              <version>${keycloak.version}</version>
+           </dependency>
+
+            <dependency>
+              <groupId>org.keycloak</groupId>
               <artifactId>keycloak-connections-jpa</artifactId>
               <version>${keycloak.version}</version>
             </dependency>
