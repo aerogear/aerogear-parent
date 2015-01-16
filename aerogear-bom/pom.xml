@@ -30,7 +30,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <apns.version>1.0.0.Beta4</apns.version>
+        <apns.version>1.0.0.Beta5</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
