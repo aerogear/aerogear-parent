@@ -51,7 +51,7 @@
         <org.jboss.as.jboss-as-arquillian-container.version>7.1.3.Final</org.jboss.as.jboss-as-arquillian-container.version>
         <org.jboss.as.version>7.1.1.Final</org.jboss.as.version>
         <org.jboss.aerogear.test.arquillian.arquillian-non-deploying-container.version>0.3.0</org.jboss.aerogear.test.arquillian.arquillian-non-deploying-container.version>
-        <org.jboss.aerogear.test.arquillian.arquillian-rule.version>0.2.0</org.jboss.aerogear.test.arquillian.arquillian-rule.version>
+        <org.jboss.aerogear.test.arquillian.arquillian-rule.version>0.3.0</org.jboss.aerogear.test.arquillian.arquillian-rule.version>
         <org.jboss.aerogear.test.arquillian.arquillian-smart-url.version>0.2.0</org.jboss.aerogear.test.arquillian.arquillian-smart-url.version>
         <org.jboss.shrinkwrap.resolver.version>2.1.1</org.jboss.shrinkwrap.resolver.version>
         <org.jmock.version>2.6.0</org.jmock.version>
