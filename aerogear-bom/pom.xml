@@ -48,7 +48,7 @@
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <jedis.version>2.0.0</jedis.version>
         <json-simple.version>1.1</json-simple.version>
-        <keycloak.version>1.2.0.CR1</keycloak.version>
+        <keycloak.version>1.2.0.Final</keycloak.version>
         <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
