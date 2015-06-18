@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-android-bom</artifactId>
-    <version>0.2.15-SNAPSHOT</version>
+    <version>0.2.16-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>JBoss AeroGear Android BOM</name>
