@@ -48,7 +48,7 @@
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <jedis.version>2.0.0</jedis.version>
         <json-simple.version>1.1</json-simple.version>
-        <keycloak.version>1.3.1.Final</keycloak.version>
+        <keycloak.version>1.5.1.Final</keycloak.version>
         <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
         <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
@@ -363,15 +363,16 @@
 
             <dependency>
               <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-model-sessions-mem</artifactId>
+              <artifactId>keycloak-model-sessions-infinispan</artifactId>
               <version>${keycloak.version}</version>
             </dependency>
 
             <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-model-sessions-jpa</artifactId>
-              <version>${keycloak.version}</version>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-invalidation-cache-infinispan</artifactId>
+                <version>${keycloak.version}</version>
             </dependency>
+
 
             <!-- Required by ups-jaxrs module -->
             <dependency>
