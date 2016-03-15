@@ -39,7 +39,7 @@
         <ektorp.version>1.4.1</ektorp.version>
         <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.20</freemarker.version>
-        <gcm-server.version>1.0.2</gcm-server.version>
+        <gcm-server.version>1.0.0</gcm-server.version>
         <hibernate.version>4.2.15.Final</hibernate.version>
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
@@ -124,7 +124,7 @@
             </dependency>
 
             <dependency>
-                <groupId>com.ganyo</groupId>
+                <groupId>com.google.gcm</groupId>
                 <artifactId>gcm-server</artifactId>
                 <version>${gcm-server.version}</version>
             </dependency>
