@@ -40,8 +40,8 @@
         <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.20</freemarker.version>
         <gcm-server.version>1.0.0</gcm-server.version>
-        <hibernate.version>4.2.15.Final</hibernate.version>
-        <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+        <hibernate.version>5.0.7.Final</hibernate.version>
+        <hibernate-validator.version>5.2.3.Final</hibernate-validator.version>
         <iharder.version>2.3.8</iharder.version>
         <jackson.version>2.5.4</jackson.version>
         <jboss.as.version>7.1.1.Final</jboss.as.version>
@@ -56,7 +56,7 @@
         <org.apache.httpcomponents.httpcore.version>4.3.3</org.apache.httpcomponents.httpcore.version>
         <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
-        <resteasy.version>3.0.14.Final</resteasy.version>
+        <resteasy.version>3.0.16.Final</resteasy.version>
         <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
         <vertx.version>2.0.1-final</vertx.version>
         <zxing.version>2.2</zxing.version>
