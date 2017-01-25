@@ -94,8 +94,8 @@
 
 
     <modules>
-        <module>aerogear-bom</module>
         <module>aerogear-android-bom</module>
+        <module>aerogear-unifiedpush-bom</module>
         <module>aerogear-test-bom</module>
     </modules>
 
