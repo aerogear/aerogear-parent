@@ -30,13 +30,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <apns.version>1.0.0.Beta6</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
         <commons-logging.version>1.1.1</commons-logging.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
-        <ektorp.version>1.4.1</ektorp.version>
         <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.20</freemarker.version>
         <gcm-server.version>1.0.0</gcm-server.version>
@@ -50,14 +48,12 @@
         <json-simple.version>1.1</json-simple.version>
         <keycloak.version>1.3.1.Final</keycloak.version>
         <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
-        <netty.version>5.0.0.Alpha1</netty.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.httpcore.version>4.3.3</org.apache.httpcomponents.httpcore.version>
         <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
         <resteasy.version>2.3.7.Final</resteasy.version>
         <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
-        <vertx.version>2.0.1-final</vertx.version>
         <zxing.version>2.2</zxing.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
@@ -163,40 +159,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.notnoop.apns</groupId>
-                <artifactId>apns</artifactId>
-                <version>${apns.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-all</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec-http</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-handler</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.vertx</groupId>
-                <artifactId>vertx-platform</artifactId>
-                <version>${vertx.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
@@ -229,13 +191,6 @@
                 <artifactId>jackson-xc</artifactId>
                 <version>${codehaus.jackson.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>org.ektorp</groupId>
-                <artifactId>org.ektorp</artifactId>
-                <version>${ektorp.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.freemarker</groupId>
                 <artifactId>freemarker</artifactId>
