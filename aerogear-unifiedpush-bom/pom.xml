@@ -19,11 +19,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.aerogear</groupId>
-    <artifactId>aerogear-bom</artifactId>
-    <version>0.2.22-SNAPSHOT</version>
+    <artifactId>aerogear-unifiedpush-bom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>JBoss AeroGear BOM</name>
+    <name>JBoss AeroGear UnifiedPush BOM</name>
     <description>Bill Of Materials for AeroGear</description>
     <url>http://aerogear.org</url>
 
@@ -35,30 +35,24 @@
         <commons-codec.version>1.6</commons-codec.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
         <commons-logging.version>1.1.1</commons-logging.version>
-        <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
-        <ektorp.version>1.4.1</ektorp.version>
+        <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
         <findbugs.version>2.0.3</findbugs.version>
         <freemarker.version>2.3.20</freemarker.version>
         <gcm-server.version>1.0.0</gcm-server.version>
-        <hibernate.version>5.0.7.Final</hibernate.version>
-        <hibernate-validator.version>5.2.3.Final</hibernate-validator.version>
-        <iharder.version>2.3.8</iharder.version>
-        <jackson.version>2.5.4</jackson.version>
-        <jboss.as.version>7.1.1.Final</jboss.as.version>
+        <hibernate.version>5.0.10.Final</hibernate.version>
+        <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+        <jackson.version>2.7.4</jackson.version>
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
-        <jedis.version>2.0.0</jedis.version>
         <json-simple.version>1.1</json-simple.version>
-        <keycloak.version>1.7.0.Final</keycloak.version>
+        <keycloak.version>2.5.0.Final</keycloak.version>
         <infinispan.version>6.0.2.Final</infinispan.version>
-        <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
-        <netty.version>5.0.0.Alpha1</netty.version>
+        <servlet.api.31.version>1.0.0.Final</servlet.api.31.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.httpcore.version>4.3.3</org.apache.httpcomponents.httpcore.version>
         <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
-        <resteasy.version>3.0.16.Final</resteasy.version>
+        <resteasy.version>3.0.19.Final</resteasy.version>
         <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
-        <vertx.version>2.0.1-final</vertx.version>
         <zxing.version>2.2</zxing.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
@@ -170,43 +164,9 @@
             </dependency>
 
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-all</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec-http</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-handler</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.vertx</groupId>
-                <artifactId>vertx-platform</artifactId>
-                <version>${vertx.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>net.iharder</groupId>
-                <artifactId>base64</artifactId>
-                <version>${iharder.version}</version>
             </dependency>
 
             <dependency>
@@ -215,6 +175,12 @@
                 <version>${org.bouncycastle.version}</version>
             </dependency>
 
+            <!-- need to replace with fasterxml -->
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-jaxrs</artifactId>
+                <version>${codehaus.jackson.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.codehaus.jackson</groupId>
                 <artifactId>jackson-core-asl</artifactId>
@@ -232,12 +198,6 @@
             </dependency>
 
             <dependency>
-                <groupId>org.ektorp</groupId>
-                <artifactId>org.ektorp</artifactId>
-                <version>${ektorp.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.freemarker</groupId>
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
@@ -252,22 +212,6 @@
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.as</groupId>
-                <artifactId>jboss-as-controller</artifactId>
-                <version>${jboss.as.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.as</groupId>
-                <artifactId>jboss-as-naming</artifactId>
-                <version>${jboss.as.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.as</groupId>
-                <artifactId>jboss-as-server</artifactId>
-                <version>${jboss.as.version}</version>
             </dependency>
 
             <dependency>
@@ -345,8 +289,8 @@
 
             <dependency>
               <groupId>org.jboss.spec.javax.servlet</groupId>
-              <artifactId>jboss-servlet-api_3.0_spec</artifactId>
-              <version>${servlet.api.30.version}</version>
+              <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+              <version>${servlet.api.31.version}</version>
             </dependency>
 
             <dependency>
@@ -422,12 +366,6 @@
               <groupId>org.keycloak</groupId>
               <artifactId>keycloak-wildfly-adapter</artifactId>
               <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>${jedis.version}</version>
             </dependency>
 
          </dependencies>
