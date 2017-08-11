@@ -30,7 +30,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <apns.version>1.0.0.Beta6</apns.version>
         <bouncycastle.version>140</bouncycastle.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
@@ -155,12 +154,6 @@
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>annotations</artifactId>
                 <version>${findbugs.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.notnoop.apns</groupId>
-                <artifactId>apns</artifactId>
-                <version>${apns.version}</version>
             </dependency>
 
             <dependency>
