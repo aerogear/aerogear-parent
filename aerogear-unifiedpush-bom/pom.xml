@@ -286,49 +286,6 @@
               <version>${servlet.api.31.version}</version>
             </dependency>
 
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-connections-jpa-liquibase</artifactId>
-              <version>${keycloak.version}</version>
-           </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-connections-jpa</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-model-jpa</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.infinispan</groupId>
-              <artifactId>infinispan-core</artifactId>
-              <version>${infinispan.version}</version>
-              <scope>provided</scope>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-connections-infinispan</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-model-sessions-infinispan</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-invalidation-cache-infinispan</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-
             <!-- Required by ups-jaxrs module -->
             <dependency>
               <groupId>org.keycloak</groupId>
@@ -337,24 +294,13 @@
             </dependency>
 
             <!-- Required by ups-server module -->
-           <dependency>
+           <!--dependency>
               <groupId>org.keycloak</groupId>
               <artifactId>keycloak-adapter-core</artifactId>
               <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-jboss-adapter-core</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
+            </dependency-->
 
             <!-- Required adatpers -->
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-as7-adapter</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
             <dependency>
               <groupId>org.keycloak</groupId>
               <artifactId>keycloak-wildfly-adapter</artifactId>
