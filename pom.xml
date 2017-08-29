@@ -72,23 +72,26 @@
         </developer>
     </developers>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aerogear-misc.version>0.1.2</aerogear-misc.version>
         <java-formatter.plugin.version>0.4</java-formatter.plugin.version>
         <license.plugin.version>1.9.0</license.plugin.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>jboss-public-snapshot-repository-group</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
 
     <modules>
         <module>aerogear-android-bom</module>
@@ -227,4 +230,3 @@
     </profiles>
 
 </project>
-
