@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-unifiedpush-bom</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>JBoss AeroGear UnifiedPush BOM</name>
@@ -43,8 +43,8 @@
         <jackson.version>2.7.4</jackson.version>
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <json-simple.version>1.1</json-simple.version>
-        <keycloak.version>2.5.0.Final</keycloak.version>
-        <infinispan.version>6.0.2.Final</infinispan.version>
+        <keycloak.version>3.2.1.Final</keycloak.version>
+        <infinispan.version>8.1.0.Final</infinispan.version>
         <servlet.api.31.version>1.0.0.Final</servlet.api.31.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.httpcore.version>4.3.3</org.apache.httpcomponents.httpcore.version>
@@ -265,15 +265,6 @@
                 <version>${org.apache.httpcomponents.httpclient.version}</version>
             </dependency>
 
-            <!-- Keycloak section borrowed from project integrations on Keycloak -->
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-dependencies-server-min</artifactId>
-              <version>${keycloak.version}</version>
-              <type>pom</type>
-            </dependency>
-
             <dependency>
               <groupId>org.jboss.resteasy</groupId>
               <artifactId>resteasy-jaxrs</artifactId>
@@ -286,49 +277,6 @@
               <version>${servlet.api.31.version}</version>
             </dependency>
 
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-connections-jpa-liquibase</artifactId>
-              <version>${keycloak.version}</version>
-           </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-connections-jpa</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-model-jpa</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.infinispan</groupId>
-              <artifactId>infinispan-core</artifactId>
-              <version>${infinispan.version}</version>
-              <scope>provided</scope>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-connections-infinispan</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-model-sessions-infinispan</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-invalidation-cache-infinispan</artifactId>
-                <version>${keycloak.version}</version>
-            </dependency>
-
             <!-- Required by ups-jaxrs module -->
             <dependency>
               <groupId>org.keycloak</groupId>
@@ -336,23 +284,10 @@
               <version>${keycloak.version}</version>
             </dependency>
 
-            <!-- Required by ups-server module -->
-           <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-adapter-core</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-jboss-adapter-core</artifactId>
-              <version>${keycloak.version}</version>
-            </dependency>
-
             <!-- Required adatpers -->
             <dependency>
               <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-as7-adapter</artifactId>
+              <artifactId>keycloak-adapter-core</artifactId>
               <version>${keycloak.version}</version>
             </dependency>
             <dependency>
