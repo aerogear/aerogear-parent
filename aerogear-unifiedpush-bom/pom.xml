@@ -265,15 +265,6 @@
                 <version>${org.apache.httpcomponents.httpclient.version}</version>
             </dependency>
 
-            <!-- Keycloak section borrowed from project integrations on Keycloak -->
-
-            <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-dependencies-server-min</artifactId>
-              <version>${keycloak.version}</version>
-              <type>pom</type>
-            </dependency>
-
             <dependency>
               <groupId>org.jboss.resteasy</groupId>
               <artifactId>resteasy-jaxrs</artifactId>
@@ -293,14 +284,12 @@
               <version>${keycloak.version}</version>
             </dependency>
 
-            <!-- Required by ups-server module -->
-           <!--dependency>
+            <!-- Required adatpers -->
+            <dependency>
               <groupId>org.keycloak</groupId>
               <artifactId>keycloak-adapter-core</artifactId>
               <version>${keycloak.version}</version>
-            </dependency-->
-
-            <!-- Required adatpers -->
+            </dependency>
             <dependency>
               <groupId>org.keycloak</groupId>
               <artifactId>keycloak-wildfly-adapter</artifactId>
