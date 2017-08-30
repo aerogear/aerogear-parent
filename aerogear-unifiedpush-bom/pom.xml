@@ -30,13 +30,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <commons-codec.version>1.6</commons-codec.version>
-        <commons-httpclient.version>3.1</commons-httpclient.version>
-        <commons-logging.version>1.1.1</commons-logging.version>
         <findbugs.version>2.0.3</findbugs.version>
         <gcm-server.version>1.0.0</gcm-server.version>
         <hibernate.version>5.0.10.Final</hibernate.version>
-        <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+        <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
         <jackson.version>2.8.9</jackson.version>
         <jboss.modules.version>1.1.1.GA</jboss.modules.version>
         <json-simple.version>1.1</json-simple.version>
@@ -124,11 +121,6 @@
             </dependency>
 
             <dependency>
-                <groupId>commons-httpclient</groupId>
-                <artifactId>commons-httpclient</artifactId>
-                <version>${commons-httpclient.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>annotations</artifactId>
                 <version>${findbugs.version}</version>
@@ -192,27 +184,6 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-multipart-provider</artifactId>
                 <version>${resteasy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>${commons-codec.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-logging</groupId>
-                <artifactId>commons-logging</artifactId>
-                <version>${commons-logging.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpcore</artifactId>
-                <version>${org.apache.httpcomponents.httpcore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${org.apache.httpcomponents.httpclient.version}</version>
             </dependency>
 
             <dependency>
