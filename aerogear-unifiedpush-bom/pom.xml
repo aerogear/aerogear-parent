@@ -33,7 +33,6 @@
         <commons-codec.version>1.6</commons-codec.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
         <commons-logging.version>1.1.1</commons-logging.version>
-        <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
         <findbugs.version>2.0.3</findbugs.version>
         <gcm-server.version>1.0.0</gcm-server.version>
         <hibernate.version>5.0.10.Final</hibernate.version>
@@ -145,28 +144,6 @@
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk16</artifactId>
                 <version>${org.bouncycastle.version}</version>
-            </dependency>
-
-            <!-- need to replace with fasterxml -->
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-jaxrs</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-core-asl</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-mapper-asl</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-xc</artifactId>
-                <version>${codehaus.jackson.version}</version>
             </dependency>
 
             <dependency>
