@@ -30,29 +30,19 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <bouncycastle.version>140</bouncycastle.version>
-        <commons-codec.version>1.6</commons-codec.version>
-        <commons-httpclient.version>3.1</commons-httpclient.version>
-        <commons-logging.version>1.1.1</commons-logging.version>
-        <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
         <findbugs.version>2.0.3</findbugs.version>
-        <freemarker.version>2.3.20</freemarker.version>
         <gcm-server.version>1.0.0</gcm-server.version>
         <hibernate.version>5.0.10.Final</hibernate.version>
-        <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
-        <jackson.version>2.7.4</jackson.version>
-        <jboss.modules.version>1.1.1.GA</jboss.modules.version>
+        <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
+        <jackson.version>2.8.9</jackson.version>
         <json-simple.version>1.1</json-simple.version>
         <keycloak.version>3.2.1.Final</keycloak.version>
-        <infinispan.version>8.1.0.Final</infinispan.version>
         <servlet.api.31.version>1.0.0.Final</servlet.api.31.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.httpcore.version>4.3.3</org.apache.httpcomponents.httpcore.version>
         <org.apache.httpcomponents.httpclient.version>4.3.6</org.apache.httpcomponents.httpclient.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
         <resteasy.version>3.0.19.Final</resteasy.version>
-        <scprov-jdk15on.version>1.47.0.3</scprov-jdk15on.version>
-        <zxing.version>2.2</zxing.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
     </properties>
@@ -95,12 +85,6 @@
             -->
 
             <dependency>
-                <groupId>bouncycastle</groupId>
-                <artifactId>bcprov-jdk16</artifactId>
-                <version>${bouncycastle.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
                 <version>${jackson.version}</version>
@@ -129,28 +113,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.google.zxing</groupId>
-                <artifactId>core</artifactId>
-                <version>${zxing.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.zxing</groupId>
-                <artifactId>javase</artifactId>
-                <version>${zxing.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.madgag</groupId>
-                <artifactId>scprov-jdk15on</artifactId>
-                <version>${scprov-jdk15on.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-httpclient</groupId>
-                <artifactId>commons-httpclient</artifactId>
-                <version>${commons-httpclient.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>annotations</artifactId>
                 <version>${findbugs.version}</version>
@@ -168,34 +130,6 @@
                 <version>${org.bouncycastle.version}</version>
             </dependency>
 
-            <!-- need to replace with fasterxml -->
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-jaxrs</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-core-asl</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-mapper-asl</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-xc</artifactId>
-                <version>${codehaus.jackson.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.freemarker</groupId>
-                <artifactId>freemarker</artifactId>
-                <version>${freemarker.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-entitymanager</artifactId>
@@ -207,17 +141,6 @@
                 <version>${hibernate-validator.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.jboss.modules</groupId>
-                <artifactId>jboss-modules</artifactId>
-                <version>${jboss.modules.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>async-http-servlet-3.0</artifactId>
-                <version>${resteasy.version}</version>
-            </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>jaxrs-api</artifactId>
@@ -242,27 +165,6 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-multipart-provider</artifactId>
                 <version>${resteasy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>${commons-codec.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-logging</groupId>
-                <artifactId>commons-logging</artifactId>
-                <version>${commons-logging.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpcore</artifactId>
-                <version>${org.apache.httpcomponents.httpcore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${org.apache.httpcomponents.httpclient.version}</version>
             </dependency>
 
             <dependency>
