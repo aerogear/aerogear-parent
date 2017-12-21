@@ -1,3 +1,7 @@
+#Maven release files
+*.releaseBackup
+release.properties
+
 #Build targets
 target/
 /target
