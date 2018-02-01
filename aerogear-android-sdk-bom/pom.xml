@@ -31,11 +31,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--  dependencies -->
+        <android.support.version>26.1.0</android.support.version>
+
+        <!-- Core -->
         <okhttp.version>3.9.1</okhttp.version>
+
+        <!-- Auth -->
+        <appauth.version>0.7.0</appauth.version>
 
         <!-- test dependencies -->
         <junit.version>4.12</junit.version>
+        <android.support.test.runner.version>1.0.1</android.support.test.runner.version>
+        <android.support.test.rules.version>1.0.1</android.support.test.rules.version>
+        <android.support.test.espresso.version>3.0.1</android.support.test.espresso.version>
         <robolectric.version>3.6.1</robolectric.version>
+        <mockito.version>2.10.0</mockito.version>
 
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
         </jboss.releases.repo.url>
@@ -81,9 +91,9 @@
             -->
 
             <dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>${okhttp.version}</version>
+                <groupId>com.android.support</groupId>
+                <artifactId>appcompat-v7</artifactId>
+                <version>${android.support.version}</version>
             </dependency>
 
             <dependency>
@@ -93,11 +103,48 @@
             </dependency>
 
             <dependency>
+                <groupId>com.android.support.test</groupId>
+                <artifactId>runner</artifactId>
+                <version>${android.support.test.runner.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.android.support.test</groupId>
+                <artifactId>rules</artifactId>
+                <version>${android.support.test.rules.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.android.support.test.espresso</groupId>
+                <artifactId>espresso-core</artifactId>
+                <version>${android.support.test.espresso.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.robolectric</groupId>
                 <artifactId>robolectric</artifactId>
                 <version>${robolectric.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>            
+
+            <!-- Core -->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+
+            <!-- Auth -->
+            <dependency>
+                <groupId>net.openid</groupId>
+                <artifactId>appauth</artifactId>
+                <version>${appauth.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
