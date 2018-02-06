@@ -38,6 +38,7 @@
 
         <!-- Auth -->
         <appauth.version>0.7.0</appauth.version>
+        <jose4j.version>0.6.3</jose4j.version>
 
         <!-- test dependencies -->
         <junit.version>4.12</junit.version>
@@ -144,6 +145,12 @@
                 <groupId>net.openid</groupId>
                 <artifactId>appauth</artifactId>
                 <version>${appauth.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.bitbucket.b_c</groupId>
+                <artifactId>jose4j</artifactId>
+                <version>${jose4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
