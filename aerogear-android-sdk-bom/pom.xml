@@ -47,7 +47,6 @@
         <android.support.test.espresso.version>3.0.1</android.support.test.espresso.version>
         <robolectric.version>3.6.1</robolectric.version>
         <mockito.version>2.10.0</mockito.version>
-        <json.version>20180130</json.version>
 
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
         </jboss.releases.repo.url>
@@ -132,13 +131,7 @@
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.json</groupId>
-                <artifactId>json</artifactId>
-                <version>${json.version}</version>
-            </dependency>
+            </dependency>            
 
             <!-- Core -->
             <dependency>
