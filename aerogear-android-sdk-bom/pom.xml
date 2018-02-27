@@ -166,6 +166,12 @@
                 <artifactId>rootbeer-lib</artifactId>
                 <version>${rootbeer-lib.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.android.support</groupId>
+                <artifactId>customtabs</artifactId>
+                <version>${android.support.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
