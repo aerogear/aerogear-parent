@@ -39,7 +39,6 @@
         <!-- Auth -->
         <appauth.version>0.7.0</appauth.version>
         <jose4j.version>0.6.3</jose4j.version>
-        <customtabs.version>26.1.0</customtabs.version>
         <rootbeer-lib.version>0.0.6</rootbeer-lib.version>
 
         <!-- test dependencies -->
@@ -160,12 +159,6 @@
                 <groupId>org.bitbucket.b_c</groupId>
                 <artifactId>jose4j</artifactId>
                 <version>${jose4j.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.android.support</groupId>
-                <artifactId>customtabs</artifactId>
-                <version>${customtabs.versionn}</version>
             </dependency>
 
             <dependency>
