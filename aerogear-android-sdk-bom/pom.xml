@@ -150,15 +150,9 @@
 
             <!-- Auth -->
             <dependency>
-                <groupId>net.openid</groupId>
-                <artifactId>appauth</artifactId>
-                <version>${appauth.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.bitbucket.b_c</groupId>
-                <artifactId>jose4j</artifactId>
-                <version>${jose4j.version}</version>
+                <groupId>com.android.support</groupId>
+                <artifactId>customtabs</artifactId>
+                <version>${android.support.version}</version>
             </dependency>
 
             <dependency>
@@ -168,9 +162,15 @@
             </dependency>
 
             <dependency>
-                <groupId>com.android.support</groupId>
-                <artifactId>customtabs</artifactId>
-                <version>${android.support.version}</version>
+                <groupId>net.openid</groupId>
+                <artifactId>appauth</artifactId>
+                <version>${appauth.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.bitbucket.b_c</groupId>
+                <artifactId>jose4j</artifactId>
+                <version>${jose4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
