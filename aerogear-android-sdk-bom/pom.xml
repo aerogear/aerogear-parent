@@ -41,6 +41,9 @@
         <jose4j.version>0.6.3</jose4j.version>
         <rootbeer-lib.version>0.0.6</rootbeer-lib.version>
 
+        <!-- Push -->
+        <firebase.messaging.version>11.8.0</firebase.messaging.version>
+
         <!-- test dependencies -->
         <junit.version>4.12</junit.version>
         <android.support.test.runner.version>1.0.1</android.support.test.runner.version>
@@ -177,6 +180,13 @@
                 <groupId>org.bitbucket.b_c</groupId>
                 <artifactId>jose4j</artifactId>
                 <version>${jose4j.version}</version>
+            </dependency>
+
+            <!-- Push -->
+            <dependency>
+                <groupId>com.google.firebase</groupId>
+                <artifactId>firebase-messaging</artifactId>
+                <version>${firebase.messaging.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
