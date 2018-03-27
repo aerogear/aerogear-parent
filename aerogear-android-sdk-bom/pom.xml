@@ -42,7 +42,7 @@
         <rootbeer-lib.version>0.0.6</rootbeer-lib.version>
 
         <!-- Push -->
-        <firebase.messaging.version>11.8.0</firebase.messaging.version>
+        <firebase.messaging.version>12.0.0</firebase.messaging.version>
 
         <!-- test dependencies -->
         <junit.version>4.12</junit.version>
