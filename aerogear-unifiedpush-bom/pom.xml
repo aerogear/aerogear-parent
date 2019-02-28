@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-unifiedpush-bom</artifactId>
-    <version>1.1.13-SNAPSHOT</version>
+    <version>1.1.13</version>
     <packaging>pom</packaging>
 
     <name>JBoss AeroGear UnifiedPush BOM</name>
@@ -59,7 +59,7 @@
         <connection>scm:git:git://git@github.com:aerogear/aerogear-parent.git</connection>
         <developerConnection>scm:git:ssh://github.com:aerogear/aerogear-parent.git</developerConnection>
         <url>git://github.com:aerogear/aerogear-parent.git</url>
-      <tag>HEAD</tag>
+      <tag>1.1.13</tag>
   </scm>
 
     <licenses>
