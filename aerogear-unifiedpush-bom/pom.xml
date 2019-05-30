@@ -42,7 +42,7 @@
         <org.apache.httpcomponents.httpcore.version>4.5.7</org.apache.httpcomponents.httpcore.version>
         <org.apache.httpcomponents.httpclient.version>4.4.11</org.apache.httpcomponents.httpclient.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
-        <resteasy.version>3.0.19.Final</resteasy.version>
+        <resteasy.version>3.5.1.Final</resteasy.version>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
     </properties>
