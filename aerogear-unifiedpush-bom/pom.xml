@@ -59,8 +59,8 @@
         <connection>scm:git:git://git@github.com:aerogear/aerogear-parent.git</connection>
         <developerConnection>scm:git:ssh://github.com:aerogear/aerogear-parent.git</developerConnection>
         <url>git://github.com:aerogear/aerogear-parent.git</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <licenses>
         <license>
@@ -81,7 +81,7 @@
                 - A element's inner order is <groupId>, <artifactId>, [<type>,] [<classifier>,] <version> (following Aether proper)
                 EXCEPTIONS:
                 - If there is the need to force a particular version of a dependency out from a set of transitive dependencies, the
-                  alphabetical ordering policy may be overridden.
+                alphabetical ordering policy may be overridden.
             -->
 
             <dependency>
@@ -168,37 +168,37 @@
             </dependency>
 
             <dependency>
-              <groupId>org.jboss.resteasy</groupId>
-              <artifactId>resteasy-jaxrs</artifactId>
-              <version>${resteasy.version}</version>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jaxrs</artifactId>
+                <version>${resteasy.version}</version>
             </dependency>
 
             <dependency>
-              <groupId>org.jboss.spec.javax.servlet</groupId>
-              <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-              <version>${servlet.api.31.version}</version>
+                <groupId>org.jboss.spec.javax.servlet</groupId>
+                <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+                <version>${servlet.api.31.version}</version>
             </dependency>
 
             <!-- Required by ups-jaxrs module -->
             <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-core</artifactId>
-              <version>${keycloak.version}</version>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-core</artifactId>
+                <version>${keycloak.version}</version>
             </dependency>
 
             <!-- Required adatpers -->
             <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-adapter-core</artifactId>
-              <version>${keycloak.version}</version>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-adapter-core</artifactId>
+                <version>${keycloak.version}</version>
             </dependency>
             <dependency>
-              <groupId>org.keycloak</groupId>
-              <artifactId>keycloak-wildfly-adapter</artifactId>
-              <version>${keycloak.version}</version>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-wildfly-adapter</artifactId>
+                <version>${keycloak.version}</version>
             </dependency>
 
-         </dependencies>
+        </dependencies>
     </dependencyManagement>
 
     <distributionManagement>
