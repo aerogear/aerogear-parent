@@ -34,9 +34,9 @@
         <gcm-server.version>1.0.0</gcm-server.version>
         <hibernate.version>5.0.10.Final</hibernate.version>
         <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
-        <jackson.version>2.9.9</jackson.version>
+        <jackson.version>2.10.0.pr1</jackson.version>
         <json-simple.version>1.1</json-simple.version>
-        <keycloak.version>4.8.3.Final</keycloak.version>
+        <keycloak.version>6.0.1</keycloak.version>
         <servlet.api.31.version>1.0.0.Final</servlet.api.31.version>
         <mysql.version>5.1.18</mysql.version>
         <org.apache.httpcomponents.httpcore.version>4.5.7</org.apache.httpcomponents.httpcore.version>
@@ -166,13 +166,6 @@
                 <artifactId>resteasy-multipart-provider</artifactId>
                 <version>${resteasy.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-jaxrs</artifactId>
-                <version>${resteasy.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.jboss.spec.javax.servlet</groupId>
                 <artifactId>jboss-servlet-api_3.1_spec</artifactId>
