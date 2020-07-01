@@ -38,7 +38,7 @@
         <json-simple.version>1.1</json-simple.version>
         <keycloak.version>6.0.1</keycloak.version>
         <servlet.api.31.version>1.0.0.Final</servlet.api.31.version>
-        <mysql.version>5.1.18</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <org.apache.httpcomponents.httpcore.version>4.5.7</org.apache.httpcomponents.httpcore.version>
         <org.apache.httpcomponents.httpclient.version>4.4.11</org.apache.httpcomponents.httpclient.version>
         <org.bouncycastle.version>1.46</org.bouncycastle.version>
