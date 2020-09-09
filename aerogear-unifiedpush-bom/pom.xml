@@ -33,7 +33,7 @@
         <findbugs.version>2.0.3</findbugs.version>
         <gcm-server.version>1.0.0</gcm-server.version>
         <hibernate.version>5.0.10.Final</hibernate.version>
-        <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
+        <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
         <jackson.version>2.10.0.pr1</jackson.version>
         <json-simple.version>1.1</json-simple.version>
         <keycloak.version>6.0.1</keycloak.version>
