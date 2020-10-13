@@ -45,7 +45,7 @@
         <firebase.messaging.version>12.0.0</firebase.messaging.version>
 
         <!-- test dependencies -->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <android.support.test.runner.version>1.0.1</android.support.test.runner.version>
         <android.support.test.rules.version>1.0.1</android.support.test.rules.version>
         <android.support.test.espresso.version>3.0.1</android.support.test.espresso.version>
