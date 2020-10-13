@@ -35,7 +35,7 @@
         <com.jayway.awaitility.version>1.5.0</com.jayway.awaitility.version>
         <com.jayway.restassured.version>2.3.0</com.jayway.restassured.version>
 
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <org.apache.openejb.version>4.7.0</org.apache.openejb.version>
         <org.arquillian.spacelift>1.0.0.Alpha7</org.arquillian.spacelift>
